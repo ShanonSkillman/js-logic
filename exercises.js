@@ -48,6 +48,12 @@ console.log('test')
  * Console.log your result.
 */
 
+function login(password){
+  if(password === "test1234"){
+  return "Login Success!"; }
+}
+
+console.log(login("test1234"))
 
 /*
  * #3
@@ -62,6 +68,14 @@ console.log('test')
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+if (first > second){
+  return true;
+}
+
+}
+
+console.log(isGreaterThan(3, 1));
 
 
 /*
