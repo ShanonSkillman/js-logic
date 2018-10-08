@@ -176,8 +176,15 @@ console.log(notEqual("ying", "yang"));
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if(money >100){
+    return true;
+  }else{
+    return false;
+  }
+}
 
-
+console.log("spareChange: ", spareChange(101))
 /*
  * #9
  * Function - dirty30
