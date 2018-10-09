@@ -223,8 +223,15 @@ console.log("dirty30: ", dirty30(11, 11, 11))
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2 === 0){
+  return true;
+}else{
+  return false;
+}
+}
 
-
+console.log("evenStevens: ", evenStevens(7))
 
 /*
  * #11
@@ -239,6 +246,14 @@ console.log("dirty30: ", dirty30(11, 11, 11))
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
+  }
+}
+console.log("daClub: ", daClub(23,21))
 
 /*
  * #12
@@ -253,7 +268,15 @@ console.log("dirty30: ", dirty30(11, 11, 11))
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis === true){
+    return "Congratulations on a job well done.";
+  }else{
+    return "See you in summer school.";
+  }
+}
 
+console.log("gradresults: ", graduation(120, true))
 
 /*
  * #13
@@ -267,6 +290,17 @@ console.log("dirty30: ", dirty30(11, 11, 11))
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if(speed < 50){
+  return "You ar riding Honolulu's Rail.";
+}else if(speed < 100){
+  return "You are riding an Amtrack."
+}else{
+  return "Now you ballin' in the Shinkansen!"
+}
+}
+
+console.log(moneyTrain(101))
 
 /*
  * #14
@@ -281,6 +315,8 @@ console.log("dirty30: ", dirty30(11, 11, 11))
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+
+
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
