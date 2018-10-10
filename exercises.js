@@ -316,7 +316,20 @@ console.log(moneyTrain(101))
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 100;
+var doughnutPrice = 5;
+var doughnutBought = 0;
 
+function buyDoughnut(){
+if(budget >= doughnutPrice){
+  budget -= doughnutPrice; // budget = budget - doughnutPrice // 100 - 5
+  doughnutBought++; // ++ adds 1
+  }
+}
+
+buyDoughnut()
+console.log("budget: ", budget);
+console.log("doughnut bought:", doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
@@ -351,6 +364,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for (var i = 1; i<=5; i++){
+  console.log("player ", i);
+} 
 
 /* 
  * #16
@@ -358,7 +374,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
-
+for (var i = 0; i<myFavFoods.length; i++){
+  console.log("my favorite food is " + myFavFoods[i])
+}
 /*
  * #17
  * Function - sumItUp
@@ -374,7 +392,17 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [11, 22, 33, 44, 55];
+function sumItUp(arr){
+  var total = 0;
+  for(var i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+    total += arr[i]
+  }
+  return total;
 
+}
+console.log("sumitup ", sumItUp(numArray));
 
 /*
  * #18
@@ -389,6 +417,25 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var east = [];
+var west = [];
+
+function allStars(ballers){
+  for(var i = 0; i<ballers.length; i++){
+    console.log(ballers[i]);
+    if(i%2 === 0);
+    east.push(ballers[i]);
+  }else{
+    west.push(ballers.[i]);
+    }
+  }
+
+allStars(players);
+console.log("east: ", east)
+console.log("west: ", west)
+
+
 /*
  * #19
  * Function - subways
